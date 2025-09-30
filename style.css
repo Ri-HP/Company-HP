@@ -1,33 +1,54 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
+  background: #f9f9f9;
 }
+
 header {
-  background: #004080;
+  background: #003366;
   color: white;
-  padding: 15px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 15px 0;
+  text-align: center;
 }
-header nav a {
+
+nav a {
   color: white;
-  margin-left: 20px;
+  margin: 0 15px;
   text-decoration: none;
+  font-weight: bold;
 }
-.banner {
-  background: url('images/banner.jpg') no-repeat center/cover;
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: url("your-image.jpg") no-repeat center center/cover;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
-  padding: 100px 20px;
-  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
 }
-section {
-  padding: 50px 20px;
-  text-align: center;
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
 footer {
-  background: #eee;
-  padding: 20px;
+  background: #003366;
+  color: white;
   text-align: center;
+  padding: 15px;
+  margin-top: 30px;
 }
